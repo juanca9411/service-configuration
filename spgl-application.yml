@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: spgl
+  main:
+    allow-bean-definition-overriding: true
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost/spgl?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: root
+    hikari:
+      poolName: pool
+
+
+server:
+  port: 0
+
+app:
+  context: /spgl
+  async:
+    withDLQRetry: true
+    retryDelay: 1000
+    maxRetries: 1
+    prefetchCount : 10000
+    flux:
+      maxConcurrency: 500
+    global:
+      autoDeleteOnIdle: 7200
