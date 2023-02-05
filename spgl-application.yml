@@ -26,4 +26,4 @@ app:
       autoDeleteOnIdle: 7200
 eureka:
   instance:
-    instance-id: spgl:${random.uuid}
+    instance-id: spgl
