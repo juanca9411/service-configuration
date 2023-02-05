@@ -27,6 +27,6 @@ app:
       maxConcurrency: 500
     global:
       autoDeleteOnIdle: 7200
-eureka:
-  instance:
-    instance-id: spgl:${random.uuid}
+#eureka:
+ # instance:
+  #  instance-id: spgl:${random.uuid}
