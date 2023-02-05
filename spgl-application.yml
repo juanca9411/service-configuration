@@ -11,9 +11,6 @@ spring:
     password: root
     hikari:
       poolName: pool
-    cloud:
-     config:
-      uri: http://192.168.1.5:49764
 server:
   port: 0
 app:
