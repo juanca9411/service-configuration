@@ -11,9 +11,9 @@ spring:
     password: root
     hikari:
       poolName: pool
-    #cloud:
-    # config:
-    #  uri: http://juan-munoz.ceiba.local:60968
+    cloud:
+     config:
+      uri: http://juan-munoz.ceiba.local:60968
 server:
   port: 0
 app:
@@ -27,6 +27,6 @@ app:
       maxConcurrency: 500
     global:
       autoDeleteOnIdle: 7200
-#eureka:
- # instance:
-  #  instance-id: spgl:${random.uuid}
+eureka:
+  instance:
+    instance-id: spgl:${random.uuid}
