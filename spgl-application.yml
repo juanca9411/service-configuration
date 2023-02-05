@@ -13,7 +13,7 @@ spring:
       poolName: pool
     cloud:
      config:
-      uri: http://juan-munoz.ceiba.local:60968
+      uri: http://192.168.1.5:49764/
 server:
   port: 0
 app:
