@@ -9,7 +9,7 @@ spring:
       poolName: pool
 
 server:
-  port: "8080"
+  port: "0"
 
 app:
   context: /spgl
