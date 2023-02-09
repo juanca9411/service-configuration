@@ -2,11 +2,14 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost/{cipher}9025dcb738602cdb5a9000f208a4191f75dbd5bd9ce4c94820435e83f4287ab5?allowPublicKeyRetrieval=true&useSSL=false
+    url: jdbc:mysql://localhost/${constant}?allowPublicKeyRetrieval=true&useSSL=false
     username: '{cipher}e3b08e820b924110be0a0eda0008196ec9c08eea379df3684aeaf285186ad343'
     password: '{cipher}e3b08e820b924110be0a0eda0008196ec9c08eea379df3684aeaf285186ad343'
     hikari:
       poolName: pool
+
+constant:
+  bd: '{cipher}9025dcb738602cdb5a9000f208a4191f75dbd5bd9ce4c94820435e83f4287ab5'
 
 server:
   port: "0"
