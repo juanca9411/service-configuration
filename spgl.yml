@@ -8,6 +8,12 @@ spring:
     hikari:
       poolName: pool
 
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9090/realms/api-gateway-security
+
 server:
   port: "0"
 
@@ -22,12 +28,6 @@ app:
       maxConcurrency: 500
     global:
       autoDeleteOnIdle: 7200
-
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:9090/realms/api-gateway-security
 
 #Basic Authentication
 #constant:
