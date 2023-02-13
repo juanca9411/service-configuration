@@ -29,6 +29,9 @@ app:
     global:
       autoDeleteOnIdle: 7200
 
+app.security.custom.jwt.cors.allowedMethods: POST,GET,HEAD,OPTIONS
+app.security.custom.jwt.cors.allowedHeaders: "*"
+
 #Basic Authentication
 #constant:
 #  user: '{cipher}1bf2dd3ff0ca051571d28e1576787325b68b3089326a3fa514b01004ea1887d5'
