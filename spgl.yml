@@ -15,7 +15,7 @@ spring:
           issuer-uri: http://localhost:9090/realms/api-gateway-security
 
 server:
-  port: "0"
+  port: "8081"
 
 app:
   context: /spgl
