@@ -2,7 +2,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost/spgl?allowPublicKeyRetrieval=true&useSSL=false
+    url: jdbc:mysql://mysql-docker-container:3306/spgl?allowPublicKeyRetrieval=true&useSSL=false
     username: '{cipher}e3b08e820b924110be0a0eda0008196ec9c08eea379df3684aeaf285186ad343'
     password: '{cipher}e3b08e820b924110be0a0eda0008196ec9c08eea379df3684aeaf285186ad343'
     hikari:
