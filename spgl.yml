@@ -34,6 +34,6 @@ app:
 #  user: '{cipher}1bf2dd3ff0ca051571d28e1576787325b68b3089326a3fa514b01004ea1887d5'
 # password: '{cipher}1bf2dd3ff0ca051571d28e1576787325b68b3089326a3fa514b01004ea1887d5'
 
-#eureka:
- # instance:
-  #  instance-id: ${spring.application.name}:${random.uuid}
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
