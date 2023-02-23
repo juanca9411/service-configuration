@@ -12,7 +12,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://127.0.0.1:9090/realms/api-gateway-security
+          issuer-uri: http://keycloak:9090/realms/api-gateway-security
 
 server:
   port: "8081"
