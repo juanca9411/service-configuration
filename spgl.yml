@@ -13,7 +13,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://keycloak:9090/realms/api-gateway-security
+          issuer-uri: http://localhost:9090/realms/api-gateway-security/protocol/openid-connect/auth?client_id=account-console&redirect_uri=http%3A%2F%2Flocalhost%3A9090%2Frealms%2Fapi-gateway-security%2Faccount%2F%23%2F&state=84f26fc2-c1a6-4923-865b-0cfed6869bab&response_mode=fragment&response_type=code&scope=openid&nonce=2f3631c4-c15f-40ab-96a1-923f62090a22&code_challenge=hAzVbEz7oIb38XnZ0t9lBE7fw7rbxI5Jag0Vp6Wjlyc&code_challenge_method=S256
           #issuer-uri: http://localhost:9090/realms/api-gateway-security
 
 server:
