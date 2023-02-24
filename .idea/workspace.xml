@@ -291,7 +291,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677206928870</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="se modifica config">
+      <created>1677207777838</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1677207777838</updated>
+    </task>
+    <task id="LOCAL-00038" summary="se modifica config">
+      <created>1677208005931</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1677208005931</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
