@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3ac12d0-d340-457e-b468-83ca8cc0ce7c" name="Changes" comment="se modifica config" />
+    <list default="true" id="f3ac12d0-d340-457e-b468-83ca8cc0ce7c" name="Changes" comment="se modifica config">
+      <change beforePath="$PROJECT_DIR$/api-gateway.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spgl.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spgl.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -226,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677203555098</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="se modifica config">
+      <created>1677204135226</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1677204135226</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
