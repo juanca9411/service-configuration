@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://mysql-docker-container/spgl?allowPublicKeyRetrieval=true&useSSL=false
+    username: '{cipher}e3b08e820b924110be0a0eda0008196ec9c08eea379df3684aeaf285186ad343'
+    password: '{cipher}e3b08e820b924110be0a0eda0008196ec9c08eea379df3684aeaf285186ad343'
+    hikari:
+      poolName: pool
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://keycloak:8080/realms/api-gateway-security
+
+server:
+  port: "8081"
+
+app:
+  context: /spglclient
+  async:
+    withDLQRetry: true
+    retryDelay: 1000
+    maxRetries: 1
+    prefetchCount : 10000
+    flux:
+      maxConcurrency: 500
+    global:
+      autoDeleteOnIdle: 7200
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka
